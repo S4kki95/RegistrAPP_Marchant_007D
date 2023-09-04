@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>informacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Sobre la APP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card style="background-color: darkcyan;">
+    <ion-card-header class="Fondo">
+      <ion-card-title>¿Para que sirve la App?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="texto1">
+      Esta aplicacion, esta destinada para disminuir los tiempos 
+      de los profesores y alumnos al tomar la asistencia, por esta razon,
+      se ha creado esta app para que sea todo mas rapido y facil.
+    </ion-card-content>
+    <img src="assets/rapido.jpg" class="ion-padding imagen">
+  </ion-card>
+  <ion-card style="background-color: darkcyan;">
+    <ion-card-header class="Fondo">
+      <ion-card-title>¿Como funciona la app?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="texto1">
+      La aplicacion funciona mediante un codigo QR,
+      El profesor dara click en este boton y generara un
+      codigo QR en el que los alumnos tendran que sacar su camara del movil
+      y escanear el codigo.
+    </ion-card-content>
+    <ion-button [disabled]="true" expand="block" color="primary" shape="round" >Codigo QR </ion-button>
+  </ion-card>
+  <ion-card style="background-color: darkcyan;">
+    <ion-card-header class="Fondo">
+      <ion-card-title>¿El resultado?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="texto1">
+      Una vez escaneado el codigo QR, la asistencia se registrara automaticamente,
+      este codigo QR, hace todo mas facil, ya que, de por si no quita tanto tiempo
+      como cuando el profesor o profesora pasa la lista mediante el habla.
+    </ion-card-content>
+    <img src="assets/asistencia.webp" class="ion-padding imagen">
+  </ion-card>
+
+</ion-content>
