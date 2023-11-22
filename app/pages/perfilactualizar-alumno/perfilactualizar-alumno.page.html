@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>perfilactualizarAlumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">perfilactualizarAlumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <form>
+    
+    <ion-item >
+      <ion-label>Usuario: </ion-label>
+      <ion-input type="text" name="txtUsername" [(ngModel)]="alumno.Eusername" disabled></ion-input>
+    </ion-item> 
+
+    <ion-item>
+      <ion-label position="floating">Password: </ion-label>
+      <ion-input type="password" name="txtPass" [(ngModel)]="alumno.Epassword"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo: </ion-label>
+      <ion-input type="email" name="txtCorreo" [(ngModel)]="alumno.Ecorreo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Rol: </ion-label>
+      <ion-select name="txtRole"  [(ngModel)]="alumno.Erole" disabled>
+        <ion-select-option value="Academico">Academico</ion-select-option>
+        <ion-select-option value="Servicios">Servicios</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="ActualizarAlumno()">Actualizar Alumno</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

@@ -1,0 +1,179 @@
+{
+  "animalitos": [
+    {
+      "id": 1,
+      "nombre": "Lulú",
+      "tipoMascota": "Perrito",
+      "raza": "de casa"
+    },
+    {
+      "id": 2,
+      "nombre": "Tobito",
+      "tipoMascota": "Perrito",
+      "raza": "de casa"
+    },
+    {
+      "id": 3,
+      "nombre": "Ninja",
+      "tipoMascota": "Tortuga",
+      "raza": "de agua y tierra"
+    },
+    {
+      "id": 4,
+      "nombre": "León Valiente",
+      "tipoMascota": "Perrito",
+      "raza": "Labrador"
+    }
+  ],
+  "docente": [
+    {
+      "id": 1,
+      "username": "cachupin",
+      "password": "duoc",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "username": "cachupina",
+      "password": "maipu",
+      "role": "usuario",
+      "isactive": true
+    },
+    {
+      "username": "matias",
+      "password": "duoc",
+      "nombre_asignatura": "lenguaje",
+      "ano_asignatura": 2,
+      "semestre_asignatura": 4,
+      "horas_asignatura": 4,
+      "id": 3,
+      "isactive": true
+    },
+    {
+      "Pusername": "matias",
+      "Ppassword": "duocs",
+      "Pcorreo": "matias@gmail.com",
+      "nombre_asignatura": "lenguaje",
+      "ano_asignatura": "2",
+      "semestre_asignatura": "2",
+      "horas_asignatura": "2",
+      "role": "docente",
+      "isactive": true,
+      "id": 4
+    },
+    {
+      "Pusername": "matias",
+      "Ppassword": "duoc",
+      "Pcorreo": "matias@gmail.com",
+      "nombre_asignatura": "lenguaje",
+      "ano_asignatura": "2",
+      "semestre_asignatura": "2",
+      "horas_asignatura": "2",
+      "role": "docente",
+      "isactive": true,
+      "id": 5
+    }
+  ],
+  "alumno": [
+    {
+      "id": 1,
+      "username": "matias",
+      "password": "duoc",
+      "correo": "mat@duocuc.cl",
+      "role": "alumno",
+      "isactive": true
+    },
+    {
+      "Eusername": "matias",
+      "Epassword": "duoc",
+      "Ecorreo": "matias@gmail.com",
+      "Erole": "",
+      "isactive": true,
+      "id": 2
+    },
+    {
+      "Eusername": "matias",
+      "Epassword": "duoc",
+      "Ecorreo": "matias@gmail.com",
+      "Erole": "alumno",
+      "isactive": true,
+      "id": 3
+    },
+    {
+      "Eusername": "matias",
+      "Epassword": "duoc",
+      "Ecorreo": "matias@gmail.com",
+      "Erole": "alumno",
+      "isactive": true,
+      "id": 4
+    },
+    {
+      "Eusername": "alexis",
+      "Epassword": "alexis",
+      "Ecorreo": "alexis",
+      "Erole": "alumno",
+      "isactive": true,
+      "id": 5
+    },
+    {
+      "Eusername": "matita",
+      "Epassword": "matita",
+      "Ecorreo": "matita@gmail.cim",
+      "Erole": "alumno",
+      "isactive": true,
+      "id": 6
+    },
+    {
+      "Eusername": "loco",
+      "Epassword": "loco",
+      "Ecorreo": "loco123",
+      "Erole": "alumno",
+      "isactive": true,
+      "id": 7
+    },
+    {
+      "Eusername": "loco",
+      "Epassword": "loco",
+      "Ecorreo": "loco123",
+      "Erole": "alumno",
+      "isactive": true,
+      "id": 8
+    }
+  ],
+  "anime": [
+    {
+      "nombre": "Shingeki no Kyojin",
+      "temporada": "primavera",
+      "fecha": 4.1
+    },
+    {
+      "nombre": "Solo Leveling",
+      "temporada": "Verano",
+      "fecha": "Enero"
+    },
+    {
+      "nombre": "Kimetsu no Yaiba",
+      "temporada": "otoño",
+      "fecha": 2024
+    },
+    {
+      "nombre": "Haikyu!!",
+      "temporada": "Verano",
+      "fecha": 16.2
+    },
+    {
+      "nombre": "Bleach",
+      "temporada": "Sin confirmar",
+      "fecha": 2024
+    },
+    {
+      "nombre": "Konosuba",
+      "temporada": "Sin confirmar",
+      "fecha": 2024
+    }
+  ],
+  "datosQr": [
+    {}
+  ]
+}

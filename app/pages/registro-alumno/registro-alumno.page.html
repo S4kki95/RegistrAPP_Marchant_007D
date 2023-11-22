@@ -1,0 +1,80 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio" 
+            text="back"
+            color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>registroAlumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">registroAlumno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card style="background-color: darkblue;">
+    <ion-card-header>
+      <ion-card-title>Registrate</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="background-color: darkcyan;">
+      <form [formGroup]="registroForm">
+
+        <ion-list>
+          
+          <ion-item>
+            <ion-label position="floating">Username: </ion-label>
+            <ion-input type="text" placeholder="Ingrese Nombre..." formControlName="Ausername"></ion-input>
+          </ion-item>
+
+          <div *ngIf="registroForm.get('Ausername')?.invalid && (registroForm.get('Ausername')?.dirty || 
+                      registroForm.get('Ausername')?.touched)">
+
+                <div style="color:red" *ngIf="registroForm.get('Ausername')?.hasError('required')">
+                  *Username es obligatorio
+                </div>
+                <div style="color:red" *ngIf="registroForm.get('Ausername')?.hasError('minlength')">
+                  *Username Mínimo de 4 caracteres 
+                </div>
+          </div>
+          
+          <ion-item>
+            <ion-label position="floating">Password: </ion-label>
+            <ion-input type="password" formControlName="Apassword"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Correo: </ion-label>
+            <ion-input type="email" placeholder="Ingrese Correo..." formControlName="Acorreo"></ion-input>
+          </ion-item>
+
+          <div *ngIf="registroForm.get('Acorreo')?.invalid && (registroForm.get('Acorreo')?.dirty || 
+                      registroForm.get('Acorreo')?.touched)">
+
+                <div style="color:red" *ngIf="registroForm.get('Acorreo')?.hasError('required')">
+                  *Correo es obligatorio
+                </div>
+                <div style="color:red" *ngIf="registroForm.get('Acorreo')?.hasError('minlength')">
+                  *correo Mínimo de 8 caracteres 
+                </div>
+          </div>
+
+          <ion-item>
+            <ion-label position="floating">Rol: </ion-label>
+            <ion-select formControlName="Arol">
+              <ion-select-option value="alumno">Alumno</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-button (click)="registrarAlumno()" expand="block" shape="round">
+            Crear Alumno
+          </ion-button>
+        </ion-list>
+      </form>
+    </ion-card-content>
+  </ion-card> 
+</ion-content>

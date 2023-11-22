@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { AuthService } from 'src/app/servicios/auth.service';
 
 @Component({
   selector: 'app-inicio',
@@ -8,7 +9,8 @@ import { MenuController } from '@ionic/angular';
 })
 export class InicioPage implements OnInit {
 
-  constructor(private menuController: MenuController) { }
+  constructor(private menuController: MenuController,
+              private authService   : AuthService) { }
 
   ngOnInit() {
   }
@@ -16,5 +18,12 @@ export class InicioPage implements OnInit {
   mostrarMenu(){
     this.menuController.open('first');
   }
+
+  onLogout(){
+    this.authService.logout();
+  }
+
+
+  Docente = sessionStorage.getItem('Pusername');
 
 }
